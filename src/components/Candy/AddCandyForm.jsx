@@ -49,32 +49,34 @@ const AddCandyForm = (props) => {
     }
   };
   return (
-    <Card className={classes.addProduct}>
-      <form onSubmit={submitHandler}>
-        <Input
-          onChange={candyNameInputChangeHandler}
-          value={candyName}
-          type="text"
-          id="candyName"
-          label="Candy Name"
-        />
-        <Input
-          onChange={sellingPriceInputChangeHandler}
-          value={sellingPrice}
-          type="number"
-          id="sellingPrice"
-          label="Selling Price"
-        />
-        <Input
-          onChange={candyDescriptionInputChangeHandler}
-          value={candyDescription}
-          type="text"
-          id="candyDesc"
-          label="Candy Description"
-        />
-        <Button type="submit">Add Product</Button>
-      </form>
-    </Card>
+    <section className={classes.addProduct}>
+      <Card>
+        <form onSubmit={submitHandler}>
+          <Input
+            onChange={candyNameInputChangeHandler}
+            value={candyName}
+            type="text"
+            id="candyName"
+            label="Candy Name"
+          />
+          <Input
+            onChange={sellingPriceInputChangeHandler}
+            value={sellingPrice}
+            type="number"
+            id="sellingPrice"
+            label="Selling Price"
+          />
+          <Input
+            onChange={candyDescriptionInputChangeHandler}
+            value={candyDescription}
+            type="text"
+            id="candyDesc"
+            label="Candy Description"
+          />
+          <Button type="submit">Add Product</Button>
+        </form>
+      </Card>
+    </section>
   );
 };
 

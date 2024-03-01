@@ -2,7 +2,6 @@ import classes from "./CandyItemForm.module.css";
 
 const CandyItemForm = (props) => {
   const btnClickHandler = (value) => {
-    console.log(value);
     props.onAddToCart(value);
   };
   return (
